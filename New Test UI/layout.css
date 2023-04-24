@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+.nav-bar-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(52, 85, 157);
+}
+.Nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-height: 70px;
+  justify-content: space-between;
+}
+#logo-div {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 60%;
+  padding-left: 4%;
+  padding-top: 1%;
+}
+#coll-logo {
+  width: 300px;
+  height: 60px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#title-div {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 60%;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: white;
+  margin-right: 200px;
+}
+#nav-div {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 20%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.fbIcon {
+  width: 40px;
+  display: flex;
+}
+.igIcon {
+  width: 40px;
+  display: flex;
+}
+.container2 {
+  width: 100%;
+  height: 90%;
+  background-image: url(/Pictures/Luffy1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.navpage {
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+#semIcon {
+  width: 20%;
+  min-height: 150px;
+  margin-top: 160px;
+  float: right;
+}
+#num {
+  width: 80%;
+  min-height: 80px;
+  background-color: crimson;
+  border-radius: 7px;
+}
+#sem {
+  width: 100%;
+  min-height: 50px;
+  background-color: cyan;
+  border-radius: 7px;
+}
+.shelfWrapper {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  justify-content: space-around;
+  float: right;
+  scroll-snap-align: both mandatory;
+  overflow: scroll;
+  background-color: yellow;
+}
+.shelfWrapper section {
+  flex: none;
+  min-width: 90%;
+  height: 100%;
+  display: flex;
+  flex: none;
+}
+#semshelf {
+  width: 100%;
+}
+
+/* .scroll-bar {
+  overflow: auto;
+} */
+#core {
+  width: 20%;
+  margin: auto;
+  min-height: 30px;
+  background-color: darkgray;
+}
+#shelf {
+  width: 100%;
+  height: 90%;
+  margin: 0;
+  margin-top: 35px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px black;
+  background-color: darkgreen;
+}
+#book {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 460px;
+  background-color: darkkhaki;
+}
+.row {
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100px;
+  background-color: pink;
+  justify-content: space-around;
+}
+.col {
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 25%;
+  background-color: darkmagenta;
+  border-radius: 15px;
+}
+.image {
+  display: inline-block;
+  justify-content: space-around;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.image img {
+  display: inline-block;
+  height: 100px;
+  width: 110px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+.image:hover img {
+  transform: scale(1.1);
+}
+.name_text {
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+}
